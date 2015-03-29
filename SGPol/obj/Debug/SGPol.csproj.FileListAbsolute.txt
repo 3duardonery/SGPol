@@ -1,0 +1,26 @@
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\bin\Debug\SGPol.exe
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\bin\Debug\SGPol.pdb
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.csprojResolveAssemblyReference.cache
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.Properties.Resources.resources
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.csproj.GenerateResource.Cache
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.exe
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.pdb
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.FrmMain.resources
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.FrmSobre.resources
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.FrmNovoPedido.resources
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.FrmListaPedidos.resources
+c:\users\eduardo.markimpressos\documents\visual studio 2012\Projects\SGPol\SGPol\obj\Debug\SGPol.FrmNovaArte.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.exe
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.pdb
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\bin\Debug\SGPol.exe
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\bin\Debug\SGPol.pdb
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmListaPedidos.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmMain.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmNovaArte.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmNovoPedido.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmSobre.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.Properties.Resources.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.csproj.GenerateResource.Cache
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmExcluirPedido.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmListaPedidosFull.resources
