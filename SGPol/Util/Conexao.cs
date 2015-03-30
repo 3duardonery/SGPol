@@ -13,13 +13,13 @@ namespace SGPol.Util
          //VARIAVEL DO TIPO SQL CONNECTION
          private static SqlConnection sConn;
          //NOME DO SERVER
-         public static string server = "EDUARDONERY-PC";
+         public static string server = "TI01";
          //TIPO DA INSTANCIA
-         public static string instance = "SQLSERVER";
+         public static string instance = "TISQLSERVER";
          //USUARIO
          private static string user = "sa";
          //SENHA
-         private static string pass = "12345678";
+         private static string pass = "tim4rk";
          //NOME DO BANDO
          public static string db = "sgpolimero";
          //STRING PARA A CONEXAO
