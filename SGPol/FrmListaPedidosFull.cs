@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SGPol.Classes;
+using SGPol.DAO;
 
 namespace SGPol
 {
     public partial class FrmListaPedidosFull : Form
     {
+        private PedidoDAO pedidoDAO;
         private Pedido pedido = new Pedido();
+        private List<Pedido> listPedido;
         private static FrmListaPedidosFull frmListFull;
         public FrmListaPedidosFull()
         {
@@ -46,10 +49,19 @@ namespace SGPol
 
         public void carregaGrid()
         {
-            gridListPedidos.Rows.Add(1,"EMPRESA XVZY","ETIQUETA 12X50","1234","ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 2");
-            gridListPedidos.Rows.Add(1, "EMPRESA WAZ", "ETIQUETA 20X40", "3453", "ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 5");
-            gridListPedidos.Rows.Add(1, "EMPRESA TER", "ETIQUETA 30X50", "1278", "ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 1");
-            gridListPedidos.Rows.Add(1, "EMPRESA OPK", "ETIQUETA 15X20", "2343", "ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 3");
+            pedidoDAO = new PedidoDAO();
+            listPedido = pedidoDAO.ListaPedidos();
+
+            foreach(Pedido pedido2 in listPedido)
+            {
+                gridListPedidos.Rows.Add(pedido2.Id,pedido2.Cliente,pedido2.Etiqueta,pedido2.Os,pedido2.Obs);
+            }
+
+
+            //gridListPedidos.Rows.Add(1,"EMPRESA XVZY","ETIQUETA 12X50","1234","ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 2");
+            //gridListPedidos.Rows.Add(1, "EMPRESA WAZ", "ETIQUETA 20X40", "3453", "ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 5");
+            //gridListPedidos.Rows.Add(1, "EMPRESA TER", "ETIQUETA 30X50", "1278", "ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 1");
+            //gridListPedidos.Rows.Add(1, "EMPRESA OPK", "ETIQUETA 15X20", "2343", "ESSE ETIQEUTA TEM QUE SER IMPRESSA NA MAQ 3");
         }
     }
 }
