@@ -11,7 +11,7 @@ namespace SGPol.DAO
     {
         private SqlConnection sConn;
         private SqlCommand sCom;
-        private List<Pedido> listaPedido;
+        private List<Pedido> listaPedido = null;
 
         public void InserirPedido(Pedido pedido)
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace SGPol.Util
 {
@@ -25,6 +26,7 @@ namespace SGPol.Util
          //STRING PARA A CONEXAO
          private static string caminho = string.Format("Server={0}\\{1};Database={2};User Id={3};" +
             "Password={4};",server,instance,db,user,pass);
+         private static string caminhoBancoConfig = ConfigurationManager.ConnectionStrings["Conexao"].ToString();
          #endregion
 
          /*
@@ -32,7 +34,7 @@ namespace SGPol.Util
           * */
          public static SqlConnection ObterConexao()
          {
-             sConn = new SqlConnection(caminho);
+             sConn = new SqlConnection(caminhoBancoConfig);
              return sConn;
          }
 
