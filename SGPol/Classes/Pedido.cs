@@ -35,5 +35,13 @@ namespace SGPol.Classes
             get { return os; }
             set { os = value; }
         }
+
+        private string obs;
+
+        public string Obs
+        {
+            get { return obs; }
+            set { obs = value; }
+        }
     }
 }

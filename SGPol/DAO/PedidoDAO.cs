@@ -10,13 +10,23 @@ namespace SGPol.DAO
     class PedidoDAO
     {
         private SqlConnection sConn;
+        private SqlCommand sCom;
         private List<Pedido> listaPedido;
 
         public void InserirPedido(Pedido pedido)
         {
+            string Sql = "INSERT INTO tb_pedido(nome_cliente,mod_etiqueta,os,obs) VALUES(@nome,@etiqueta,@os,@obs);";
             try
             {
-
+                sConn = Util.Conexao.ObterConexao();
+                sCom = new SqlCommand(Sql,sConn);
+                sCom.Parameters.AddWithValue("@nome",pedido.Cliente);
+                sCom.Parameters.AddWithValue("@etiqueta",pedido.Etiqueta);
+                sCom.Parameters.AddWithValue("@os",pedido.Os);
+                sCom.Parameters.AddWithValue("@obs",pedido.Obs);
+                sConn.Open();
+                sCom.ExecuteNonQuery();
+                sConn.Close();
             }
             catch (SqlException sqlExc)
             {
@@ -26,7 +36,15 @@ namespace SGPol.DAO
 
         public List<Pedido> ListaPedidos()
         {
+            try
+            {
 
+            }
+            catch (SqlException sqlExc)
+            {
+                
+                
+            }
             return listaPedido;
         }
 
