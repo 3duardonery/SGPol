@@ -15,6 +15,7 @@ namespace SGPol.DAO
         private Pedido pedido;
         private SqlDataReader reader;
 
+        #region INSERIR PEDIDO
         public void InserirPedido(Pedido pedido)
         {
             string Sql = "INSERT INTO tb_pedido(nome_cliente,mod_etiqueta,os,obs) VALUES(@nome,@etiqueta,@os,@obs);";
@@ -35,7 +36,9 @@ namespace SGPol.DAO
                 
             }
         }
+        #endregion
 
+        #region CONSULTAR PEDIDO
         public List<Pedido> ListaPedidos()
         {
             string Sql = "SELECT * FROM tb_pedido;";
@@ -65,13 +68,29 @@ namespace SGPol.DAO
             }
             return listaPedido;
         }
+        #endregion
 
-        public void AtualizarPedido(int id_pedido)
-        {
-        }
         public void AtualizarPedido(Pedido pedido)
         {
+            string Sql = "UPDATE tb_pedido SET nome_cliente = @nome, mod_etiqueta = @etiqueta, os = @os, obs = @obs WHERE id_pedido = @id";
+            try
+            {
+                sCom = new SqlCommand(Sql,sConn);
+                sCom.Parameters.AddWithValue("@id",pedido.Id);
+                sCom.Parameters.AddWithValue("@nome",pedido.Cliente);
+                sCom.Parameters.AddWithValue("@etiqueta",pedido.Etiqueta);
+                sCom.Parameters.AddWithValue("@os",pedido.Os);
+                sCom.Parameters.AddWithValue("@obs",pedido.Obs);
+                sConn.Open();
+                sCom.ExecuteNonQuery();
+                sConn.Close();
+            }
+            catch (SqlException sqlExc)
+            {
+                
+            }
         }
+        
 
         public int BuscaCodPedido(Pedido pedido)
         {

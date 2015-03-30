@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListaPedidosFull));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.gridListPedidos = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbObs = new System.Windows.Forms.Label();
-            this.lbId = new System.Windows.Forms.Label();
-            this.lbNome = new System.Windows.Forms.Label();
-            this.lbEtiqueta = new System.Windows.Forms.Label();
-            this.lbOs = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.etiqueta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.os = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbOs = new System.Windows.Forms.Label();
+            this.lbEtiqueta = new System.Windows.Forms.Label();
+            this.lbNome = new System.Windows.Forms.Label();
+            this.lbId = new System.Windows.Forms.Label();
+            this.lbObs = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridListPedidos)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,6 +64,8 @@
             // 
             // gridListPedidos
             // 
+            this.gridListPedidos.AllowUserToAddRows = false;
+            this.gridListPedidos.AllowUserToOrderColumns = true;
             this.gridListPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridListPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -77,119 +79,6 @@
             this.gridListPedidos.Size = new System.Drawing.Size(820, 328);
             this.gridListPedidos.TabIndex = 0;
             this.gridListPedidos.SelectionChanged += new System.EventHandler(this.carregaInfPedido);
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.lbOs);
-            this.panel1.Controls.Add(this.lbEtiqueta);
-            this.panel1.Controls.Add(this.lbNome);
-            this.panel1.Controls.Add(this.lbId);
-            this.panel1.Controls.Add(this.lbObs);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 337);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(820, 242);
-            this.panel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID DO PEDIDO :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "NOME DO CLIENTE :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "MODELO DA ETIQUETA :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(384, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "NUMERO DA OS :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(387, 80);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "OBSERVAÇÕES :";
-            // 
-            // lbObs
-            // 
-            this.lbObs.AutoSize = true;
-            this.lbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbObs.Location = new System.Drawing.Point(387, 106);
-            this.lbObs.Name = "lbObs";
-            this.lbObs.Size = new System.Drawing.Size(23, 15);
-            this.lbObs.TabIndex = 5;
-            this.lbObs.Text = "....";
-            // 
-            // lbId
-            // 
-            this.lbId.AutoSize = true;
-            this.lbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbId.Location = new System.Drawing.Point(17, 48);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(23, 15);
-            this.lbId.TabIndex = 6;
-            this.lbId.Text = "....";
-            // 
-            // lbNome
-            // 
-            this.lbNome.AutoSize = true;
-            this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(17, 106);
-            this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(23, 15);
-            this.lbNome.TabIndex = 7;
-            this.lbNome.Text = "....";
-            // 
-            // lbEtiqueta
-            // 
-            this.lbEtiqueta.AutoSize = true;
-            this.lbEtiqueta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEtiqueta.Location = new System.Drawing.Point(17, 158);
-            this.lbEtiqueta.Name = "lbEtiqueta";
-            this.lbEtiqueta.Size = new System.Drawing.Size(23, 15);
-            this.lbEtiqueta.TabIndex = 8;
-            this.lbEtiqueta.Text = "....";
-            // 
-            // lbOs
-            // 
-            this.lbOs.AutoSize = true;
-            this.lbOs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOs.Location = new System.Drawing.Point(387, 48);
-            this.lbOs.Name = "lbOs";
-            this.lbOs.Size = new System.Drawing.Size(23, 15);
-            this.lbOs.TabIndex = 9;
-            this.lbOs.Text = "....";
             // 
             // id
             // 
@@ -220,6 +109,119 @@
             this.obs.HeaderText = "OBS";
             this.obs.Name = "obs";
             this.obs.Width = 300;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.lbOs);
+            this.panel1.Controls.Add(this.lbEtiqueta);
+            this.panel1.Controls.Add(this.lbNome);
+            this.panel1.Controls.Add(this.lbId);
+            this.panel1.Controls.Add(this.lbObs);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(3, 337);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(820, 242);
+            this.panel1.TabIndex = 1;
+            // 
+            // lbOs
+            // 
+            this.lbOs.AutoSize = true;
+            this.lbOs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOs.Location = new System.Drawing.Point(387, 48);
+            this.lbOs.Name = "lbOs";
+            this.lbOs.Size = new System.Drawing.Size(23, 15);
+            this.lbOs.TabIndex = 9;
+            this.lbOs.Text = "....";
+            // 
+            // lbEtiqueta
+            // 
+            this.lbEtiqueta.AutoSize = true;
+            this.lbEtiqueta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEtiqueta.Location = new System.Drawing.Point(17, 158);
+            this.lbEtiqueta.Name = "lbEtiqueta";
+            this.lbEtiqueta.Size = new System.Drawing.Size(23, 15);
+            this.lbEtiqueta.TabIndex = 8;
+            this.lbEtiqueta.Text = "....";
+            // 
+            // lbNome
+            // 
+            this.lbNome.AutoSize = true;
+            this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNome.Location = new System.Drawing.Point(17, 106);
+            this.lbNome.Name = "lbNome";
+            this.lbNome.Size = new System.Drawing.Size(23, 15);
+            this.lbNome.TabIndex = 7;
+            this.lbNome.Text = "....";
+            // 
+            // lbId
+            // 
+            this.lbId.AutoSize = true;
+            this.lbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbId.Location = new System.Drawing.Point(17, 48);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(23, 15);
+            this.lbId.TabIndex = 6;
+            this.lbId.Text = "....";
+            // 
+            // lbObs
+            // 
+            this.lbObs.AutoSize = true;
+            this.lbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbObs.Location = new System.Drawing.Point(387, 106);
+            this.lbObs.Name = "lbObs";
+            this.lbObs.Size = new System.Drawing.Size(23, 15);
+            this.lbObs.TabIndex = 5;
+            this.lbObs.Text = "....";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(387, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "OBSERVAÇÕES :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(384, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "NUMERO DA OS :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 138);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "MODELO DA ETIQUETA :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NOME DO CLIENTE :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID DO PEDIDO :";
             // 
             // FrmListaPedidosFull
             // 
