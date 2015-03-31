@@ -50,10 +50,6 @@
     <Compile Include="Classes\Finalizado.cs" />
     <Compile Include="Classes\Pedido.cs" />
     <Compile Include="Classes\Polimero.cs" />
-    <Compile Include="DAO\ArteDAO.cs" />
-    <Compile Include="DAO\FinalizadoDAO.cs" />
-    <Compile Include="DAO\PedidoDAO.cs" />
-    <Compile Include="DAO\PolimeroDAO.cs" />
     <Compile Include="FrmExcluirPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,7 +152,9 @@
     <Content Include="img\ticket1-.png" />
     <Content Include="Unbuntu.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DAO\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
