@@ -42,3 +42,4 @@ C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\bi
 C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmEditarPedido.resources
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\bin\Debug\SGPol.exe.config
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmEditarPedido.resources
+C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmBuscaPedido.resources

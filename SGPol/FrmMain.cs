@@ -84,13 +84,16 @@ namespace SGPol
             frmNovaArte = FrmNovaArte.getInstance();
             frmNovaArte.ShowDialog();
         }
-        /*
-         * AÇÃO DE CLICK NO ITEM PEDIDO -- CONSULTAR NO MENU 
-         * */
-        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void listarTodosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListFull = new  FrmListaPedidosFull();
+            frmListFull = new FrmListaPedidosFull();
             frmListFull.ShowDialog();
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBuscaPedido frmBuscarPedido = new FrmBuscaPedido();
+            frmBuscarPedido.ShowDialog();
         }
         /*
          * AÇÃO DE CLICK NO ITEM SAIR
@@ -137,6 +140,10 @@ namespace SGPol
             }
         }
         #endregion
+
+        
+
+        
 
         
 

@@ -66,6 +66,7 @@
             // 
             this.gridListPedidos.AllowUserToAddRows = false;
             this.gridListPedidos.AllowUserToOrderColumns = true;
+            this.gridListPedidos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.gridListPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridListPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,

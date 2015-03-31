@@ -92,15 +92,48 @@ namespace SGPol.DAO
         }
         
 
-        public int BuscaCodPedido(Pedido pedido)
+        public List<Pedido> BuscaNomeCliente(string cliente)
         {
-            int id_pedido = 0;
-            return id_pedido;
+            string Sql = "SELECT * FROM tb_pedido WHERE nome_cliente = @cliente";
+            try
+            {
+                listaPedido = new List<Pedido>();
+                sCom = new SqlCommand(Sql, sConn);
+                sCom.Parameters.AddWithValue("@cliente",cliente);
+                sConn.Open();
+                reader = sCom.ExecuteReader();
+                while (reader.Read())
+                {
+                    pedido = new Pedido();
+                    pedido.Id = int.Parse(reader["id_pedido"].ToString());
+                    pedido.Cliente = reader["nome_cliente"].ToString();
+                    pedido.Etiqueta = reader["mod_etiqueta"].ToString();
+                    pedido.Os = reader["os"].ToString();
+                    pedido.Obs = reader["obs"].ToString();
+                    listaPedido.Add(pedido);
+                    pedido = null;
+                }
+                sConn.Close();
+                
+            }
+            catch (SqlException sqlExc)
+            {
+                
+                throw;
+            }
+            return listaPedido;
         }
 
         public void ExcluirPedido(int id)
         {
+            try
+            {
 
+            }
+            catch (SqlException sqlExc)
+            {
+                
+            }
         }
     }
 }
