@@ -46,8 +46,7 @@
             this.btNovaArte = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btSair = new System.Windows.Forms.Button();
             this.rbTudo = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtListPedidos)).BeginInit();
@@ -212,23 +211,14 @@
             this.button3.Text = "DUPLICAR";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btSair
             // 
-            this.button4.Location = new System.Drawing.Point(256, 393);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 46);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "button1";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(337, 393);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 46);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "button1";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btSair.Location = new System.Drawing.Point(256, 393);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(75, 46);
+            this.btSair.TabIndex = 2;
+            this.btSair.Text = "SAIR";
+            this.btSair.UseVisualStyleBackColor = true;
             // 
             // rbTudo
             // 
@@ -248,8 +238,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 451);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btSair);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btNovaArte);
@@ -288,7 +277,6 @@
         private System.Windows.Forms.Button btNovaArte;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btSair;
     }
 }
