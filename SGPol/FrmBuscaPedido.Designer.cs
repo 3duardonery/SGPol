@@ -84,6 +84,7 @@
             this.btBuscar.TabIndex = 5;
             this.btBuscar.Text = "BUSCAR";
             this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // dtListPedidos
             // 

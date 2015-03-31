@@ -124,6 +124,72 @@ namespace SGPol.DAO
             return listaPedido;
         }
 
+        public List<Pedido> BuscaEtiqueta(string etiqueta)
+        {
+            string Sql = "SELECT * FROM tb_pedido WHERE mod_etiqueta = @etiqueta";
+            try
+            {
+                listaPedido = new List<Pedido>();
+                sCom = new SqlCommand(Sql, sConn);
+                sCom.Parameters.AddWithValue("@etiqueta", etiqueta);
+                sConn.Open();
+                reader = sCom.ExecuteReader();
+                while (reader.Read())
+                {
+                    pedido = new Pedido();
+                    pedido.Id = int.Parse(reader["id_pedido"].ToString());
+                    pedido.Cliente = reader["nome_cliente"].ToString();
+                    pedido.Etiqueta = reader["mod_etiqueta"].ToString();
+                    pedido.Os = reader["os"].ToString();
+                    pedido.Obs = reader["obs"].ToString();
+                    listaPedido.Add(pedido);
+                    pedido = null;
+                }
+                sConn.Close();
+
+            }
+            catch (SqlException sqlExc)
+            {
+
+                throw;
+            }
+            return listaPedido;
+        }
+
+        public List<Pedido> BuscaOs(string os)
+        {
+            string Sql = "SELECT * FROM tb_pedido WHERE os = @os";
+            try
+            {
+                listaPedido = new List<Pedido>();
+                sCom = new SqlCommand(Sql, sConn);
+                sCom.Parameters.AddWithValue("@os", os);
+                sConn.Open();
+                reader = sCom.ExecuteReader();
+                while (reader.Read())
+                {
+                    pedido = new Pedido();
+                    pedido.Id = int.Parse(reader["id_pedido"].ToString());
+                    pedido.Cliente = reader["nome_cliente"].ToString();
+                    pedido.Etiqueta = reader["mod_etiqueta"].ToString();
+                    pedido.Os = reader["os"].ToString();
+                    pedido.Obs = reader["obs"].ToString();
+                    listaPedido.Add(pedido);
+                    pedido = null;
+                }
+                sConn.Close();
+
+            }
+            catch (SqlException sqlExc)
+            {
+
+                throw;
+            }
+            return listaPedido;
+        }
+
+        
+
         public void ExcluirPedido(int id)
         {
             try
