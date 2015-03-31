@@ -26,16 +26,24 @@ namespace SGPol
         {
             InitializeComponent();
         }
+
+        #region AÇÃO DO BOTÃO BUSCAR
         /*
          * METODO QUE FAZ A BUSCA PELA OPÇÃO ESCOLHIDA(CLIENTE,ETIQUETA OU O.S)
          * */
         private void btBuscar_Click(object sender, EventArgs e)
         {
+            if (rbTudo.Checked)
+            {
+                pedidoDAO = new PedidoDAO();
+                listPedido = pedidoDAO.ListaPedidos();
+                carregaLista();
+            }
             // SE O RADIO BUTTON rbCliente ESTIVER CHECADO
             // CRIA UMA NOVA INSTANCIA DO OBJETO pedidoDAO
             // A LISTA ACESSA O METODO DE BUSCA POR NOME DO CLIENTE E PASSA O CAMPO BUSCA DE TEXTO
             // CHECA SE TEM ALGUM RADIO BOX BUTTON SELECIONADO
-            if (rbCliente.Checked)
+            else if (rbCliente.Checked)
             {
                 //NOVA INSTANCIA
                 pedidoDAO = new PedidoDAO();
@@ -97,16 +105,18 @@ namespace SGPol
                     // SE A LISTA CONTIVER ALGO, O SISTEMA CHAMA O METODO RESPONSAVEL PELO CARREGAMENTO DE DADOS NO GRID
                     carregaLista();
                 }
-                
+
             }
             // SE NENHUM RADIO BUTTON ESTIVER SELECIONADO O SISTEMA RETONARÁ UMA MENSAGEM DE AVISO
             else
             {
                 // MENSAGEM EM CASO NENHUM RADIO ESTIVER MARCADO
-                MessageBox.Show("Por favor selecione uma opção de busca.","AVISO",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                MessageBox.Show("Por favor selecione uma opção de busca.", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+        #endregion
 
+        #region METODO QUE CARREGA GRID
         /*
          * METODO DE CARREGAMENTO DO GRID
          * DESCARREGA A LISTA DE PEDIDOS NO GRID
@@ -130,5 +140,30 @@ namespace SGPol
                 MessageBox.Show("Erro ao carregar a lista .. "+exc.Message,"ERRO",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
+        #endregion
+
+        #region EVENTO CHECK RADIO BUTTON
+        private void eventoRbCli(object sender, EventArgs e)
+        {
+            txtCampoBusca.Enabled = true;
+        }
+
+        private void eventoRbEtiq(object sender, EventArgs e)
+        {
+            txtCampoBusca.Enabled = true;
+        }
+
+        private void eventoRbOs(object sender, EventArgs e)
+        {
+            txtCampoBusca.Enabled = true;
+        }
+
+        private void eventoRbTudo(object sender, EventArgs e)
+        {
+            txtCampoBusca.Text = "";
+            txtCampoBusca.Enabled = false;
+        }
+        #endregion
+
     }
 }

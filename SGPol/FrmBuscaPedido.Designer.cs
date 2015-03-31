@@ -43,6 +43,12 @@
             this.etiqueta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.os = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.obs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btNovaArte = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.rbTudo = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtListPedidos)).BeginInit();
             this.groupRb.SuspendLayout();
@@ -71,6 +77,7 @@
             // 
             // txtCampoBusca
             // 
+            this.txtCampoBusca.Enabled = false;
             this.txtCampoBusca.Location = new System.Drawing.Point(216, 16);
             this.txtCampoBusca.Name = "txtCampoBusca";
             this.txtCampoBusca.Size = new System.Drawing.Size(262, 20);
@@ -78,9 +85,9 @@
             // 
             // btBuscar
             // 
-            this.btBuscar.Location = new System.Drawing.Point(742, 16);
+            this.btBuscar.Location = new System.Drawing.Point(775, 9);
             this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(106, 31);
+            this.btBuscar.Size = new System.Drawing.Size(76, 44);
             this.btBuscar.TabIndex = 5;
             this.btBuscar.Text = "BUSCAR";
             this.btBuscar.UseVisualStyleBackColor = true;
@@ -89,6 +96,7 @@
             // dtListPedidos
             // 
             this.dtListPedidos.AllowUserToAddRows = false;
+            this.dtListPedidos.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtListPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtListPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -103,12 +111,13 @@
             // 
             // groupRb
             // 
+            this.groupRb.Controls.Add(this.rbTudo);
             this.groupRb.Controls.Add(this.rbOs);
             this.groupRb.Controls.Add(this.rbCliente);
             this.groupRb.Controls.Add(this.rbEtiq);
             this.groupRb.Location = new System.Drawing.Point(484, 3);
             this.groupRb.Name = "groupRb";
-            this.groupRb.Size = new System.Drawing.Size(228, 50);
+            this.groupRb.Size = new System.Drawing.Size(276, 50);
             this.groupRb.TabIndex = 6;
             this.groupRb.TabStop = false;
             this.groupRb.Text = "OPÇÕES";
@@ -116,13 +125,13 @@
             // rbOs
             // 
             this.rbOs.AutoSize = true;
-            this.rbOs.Location = new System.Drawing.Point(161, 20);
+            this.rbOs.Location = new System.Drawing.Point(164, 20);
             this.rbOs.Name = "rbOs";
             this.rbOs.Size = new System.Drawing.Size(43, 17);
             this.rbOs.TabIndex = 9;
-            this.rbOs.TabStop = true;
             this.rbOs.Text = "O.S";
             this.rbOs.UseVisualStyleBackColor = true;
+            this.rbOs.CheckedChanged += new System.EventHandler(this.eventoRbOs);
             // 
             // rbEtiq
             // 
@@ -131,9 +140,9 @@
             this.rbEtiq.Name = "rbEtiq";
             this.rbEtiq.Size = new System.Drawing.Size(64, 17);
             this.rbEtiq.TabIndex = 8;
-            this.rbEtiq.TabStop = true;
             this.rbEtiq.Text = "Etiqueta";
             this.rbEtiq.UseVisualStyleBackColor = true;
+            this.rbEtiq.CheckedChanged += new System.EventHandler(this.eventoRbEtiq);
             // 
             // rbCliente
             // 
@@ -142,9 +151,9 @@
             this.rbCliente.Name = "rbCliente";
             this.rbCliente.Size = new System.Drawing.Size(57, 17);
             this.rbCliente.TabIndex = 7;
-            this.rbCliente.TabStop = true;
             this.rbCliente.Text = "Cliente";
             this.rbCliente.UseVisualStyleBackColor = true;
+            this.rbCliente.CheckedChanged += new System.EventHandler(this.eventoRbCli);
             // 
             // id
             // 
@@ -176,11 +185,74 @@
             this.obs.Name = "obs";
             this.obs.Width = 300;
             // 
+            // btNovaArte
+            // 
+            this.btNovaArte.Location = new System.Drawing.Point(13, 393);
+            this.btNovaArte.Name = "btNovaArte";
+            this.btNovaArte.Size = new System.Drawing.Size(75, 46);
+            this.btNovaArte.TabIndex = 2;
+            this.btNovaArte.Text = "NOVA ARTE";
+            this.btNovaArte.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(94, 393);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 46);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "NOVO POLIMERO";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(175, 393);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 46);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "DUPLICAR";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(256, 393);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 46);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "button1";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(337, 393);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 46);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "button1";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // rbTudo
+            // 
+            this.rbTudo.AutoSize = true;
+            this.rbTudo.Checked = true;
+            this.rbTudo.Location = new System.Drawing.Point(217, 20);
+            this.rbTudo.Name = "rbTudo";
+            this.rbTudo.Size = new System.Drawing.Size(50, 17);
+            this.rbTudo.TabIndex = 10;
+            this.rbTudo.TabStop = true;
+            this.rbTudo.Text = "Tudo";
+            this.rbTudo.UseVisualStyleBackColor = true;
+            this.rbTudo.CheckedChanged += new System.EventHandler(this.eventoRbTudo);
+            // 
             // FrmBuscaPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 451);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btNovaArte);
             this.Controls.Add(this.dtListPedidos);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -212,5 +284,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn etiqueta;
         private System.Windows.Forms.DataGridViewTextBoxColumn os;
         private System.Windows.Forms.DataGridViewTextBoxColumn obs;
+        private System.Windows.Forms.RadioButton rbTudo;
+        private System.Windows.Forms.Button btNovaArte;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
