@@ -13,7 +13,7 @@ namespace SGPol
     public partial class FrmNovaArte : Form
     {
         static FrmNovaArte frmNvArte;
-        
+
 
         public FrmNovaArte()
         {
@@ -37,6 +37,14 @@ namespace SGPol
         {
             FrmListaPedidos lista = new FrmListaPedidos(this);
             lista.ShowDialog();
+        }
+
+        private void AtivaDtElaboracao(object sender, EventArgs e)
+        {
+            if (chkCampoDt.Checked)
+                txtDtElab.Enabled = true;
+            else
+                txtDtElab.Enabled = false;
         }
     }
 }

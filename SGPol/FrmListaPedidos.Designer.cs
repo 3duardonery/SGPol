@@ -40,6 +40,7 @@
             // 
             // gridViewPedido
             // 
+            this.gridViewPedido.AllowUserToAddRows = false;
             this.gridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridViewPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SGPol.Classes;
+using SGPol.DAO;
 
 namespace SGPol
 {
@@ -14,6 +15,8 @@ namespace SGPol
     {
         //OBJETO 
         Pedido pedido = new Pedido();
+        PedidoDAO pedidoDAO;
+        private List<Pedido> listPedido;
         /*
          * METODO CONSTRUTOR DEFAULT
          * */
@@ -36,11 +39,20 @@ namespace SGPol
          * */
         public void carregaTabela()
         {
-            gridViewPedido.Rows.Add(1,"Teste","Teste","Teste");
-            gridViewPedido.Rows.Add(2, "Teste3", "Teste32", "Teste32");
-            gridViewPedido.Rows.Add(3, "Teste345", "Teste435", "Teste432");
-            gridViewPedido.Rows.Add(4, "Teste4355", "Teste67", "Teste56");
-            gridViewPedido.Rows.Add(5, "Teste356", "Teste4556", "Teste765");
+            try
+            {
+                gridViewPedido.Rows.Clear();
+                pedidoDAO = new PedidoDAO();
+                listPedido = pedidoDAO.ListaPedidos();
+                foreach(Pedido pedido2 in listPedido)
+                {
+                    gridViewPedido.Rows.Add(pedido2.Id,pedido2.Cliente,pedido2.Etiqueta,pedido2.Os,pedido2.Obs);
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Não foi possivel carregar as informações da tabela pedido.  "+ exc.Message,"ERRO",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
 
         /* ESSE METODO AO SER ACIONADO PEGA A INSTANCIA DO FORM NOVAARTE 
@@ -56,7 +68,6 @@ namespace SGPol
             frmNvArte.lbCliente.Text = pedido.Cliente;
             frmNvArte.lbEtiqueta.Text = pedido.Etiqueta;
             frmNvArte.lbOs.Text = pedido.Os;
-            frmNvArte.btSelect.Enabled = false;
             this.Close();
         }
 

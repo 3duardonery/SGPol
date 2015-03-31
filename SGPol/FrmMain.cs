@@ -89,7 +89,7 @@ namespace SGPol
          * */
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmListFull = FrmListaPedidosFull.getInstance();
+            frmListFull = new  FrmListaPedidosFull();
             frmListFull.ShowDialog();
         }
         /*
