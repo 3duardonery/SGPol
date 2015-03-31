@@ -38,3 +38,5 @@ C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmN
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmSobre.resources
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.Properties.Resources.resources
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.csproj.GenerateResource.Cache
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\bin\Debug\SGPol.exe.config
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmEditarPedido.resources

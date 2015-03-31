@@ -114,29 +114,30 @@
             // 
             this.duplicarToolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("duplicarToolStripMenuItem3.Image")));
             this.duplicarToolStripMenuItem3.Name = "duplicarToolStripMenuItem3";
-            this.duplicarToolStripMenuItem3.Size = new System.Drawing.Size(135, 22);
+            this.duplicarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.duplicarToolStripMenuItem3.Text = "Duplicar";
             // 
             // refazerToolStripMenuItem2
             // 
             this.refazerToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("refazerToolStripMenuItem2.Image")));
             this.refazerToolStripMenuItem2.Name = "refazerToolStripMenuItem2";
-            this.refazerToolStripMenuItem2.Size = new System.Drawing.Size(135, 22);
+            this.refazerToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.refazerToolStripMenuItem2.Text = "Refazer";
             // 
             // finalizarToolStripMenuItem
             // 
             this.finalizarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("finalizarToolStripMenuItem.Image")));
             this.finalizarToolStripMenuItem.Name = "finalizarToolStripMenuItem";
-            this.finalizarToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.finalizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.finalizarToolStripMenuItem.Text = "Finalizar";
             // 
             // editarDadosToolStripMenuItem
             // 
             this.editarDadosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarDadosToolStripMenuItem.Image")));
             this.editarDadosToolStripMenuItem.Name = "editarDadosToolStripMenuItem";
-            this.editarDadosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.editarDadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editarDadosToolStripMenuItem.Text = "Editar Dados";
+            this.editarDadosToolStripMenuItem.Click += new System.EventHandler(this.editarDadosToolStripMenuItem_Click);
             // 
             // excluirToolStripMenuItem
             // 
@@ -315,7 +316,7 @@
             // 
             this.sobreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sobreToolStripMenuItem.Image")));
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
@@ -323,7 +324,7 @@
             // 
             this.testarConexãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("testarConexãoToolStripMenuItem.Image")));
             this.testarConexãoToolStripMenuItem.Name = "testarConexãoToolStripMenuItem";
-            this.testarConexãoToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.testarConexãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.testarConexãoToolStripMenuItem.Text = "Testar Conexão";
             this.testarConexãoToolStripMenuItem.Click += new System.EventHandler(this.testarConexãoToolStripMenuItem_Click);
             // 

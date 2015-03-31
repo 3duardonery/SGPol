@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace SGPol.Util
 {
@@ -10,7 +11,7 @@ namespace SGPol.Util
      {
 
          #region VARIAVEIS DE CONEXÃO
-         //VARIAVEL DO TIPO SQL CONNECTION
+         ////VARIAVEL DO TIPO SQL CONNECTION
          private static SqlConnection sConn;
          //NOME DO SERVER
          public static string server = "TI01";
@@ -24,15 +25,18 @@ namespace SGPol.Util
          public static string db = "sgpolimero";
          //STRING PARA A CONEXAO
          private static string caminho = string.Format("Server={0}\\{1};Database={2};User Id={3};" +
-            "Password={4};",server,instance,db,user,pass);
+            "Password={4};", server, instance, db, user, pass);
          #endregion
+
+         private static string caminhoBancoConfig = ConfigurationManager.ConnectionStrings["Conexao"].ToString();
+         
 
          /*
           * METODO USADO PARA OBTER A CONEXÃO COM AS VARIAVEIS ACIMA
           * */
          public static SqlConnection ObterConexao()
          {
-             sConn = new SqlConnection(caminho);
+             sConn = new SqlConnection(caminhoBancoConfig);
              return sConn;
          }
 

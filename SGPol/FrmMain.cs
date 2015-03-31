@@ -19,6 +19,7 @@ namespace SGPol
         private FrmNovaArte frmNovaArte;
         private FrmListaPedidosFull frmListFull;
         private FrmExcluirPedido frmExcluirPedido;
+        private FrmEditarPedido frmEditPedido;
         private static FrmMain frmMain;
         #endregion
 
@@ -49,6 +50,14 @@ namespace SGPol
         {
             frmExcluirPedido = FrmExcluirPedido.getInstance();
             frmExcluirPedido.ShowDialog();
+        }
+        /*
+         * AÇÃO DE CLICK NO SUBITEM EDITAR DADOS DENTRO DE PEDIDO
+         * */
+        private void editarDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEditPedido = FrmEditarPedido.getInstance();
+            frmEditPedido.ShowDialog();
         }
         
         /*
@@ -128,6 +137,8 @@ namespace SGPol
             }
         }
         #endregion
+
+        
 
         
 
