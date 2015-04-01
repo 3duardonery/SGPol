@@ -68,6 +68,7 @@ namespace SGPol
             frmNvArte.lbCliente.Text = pedido.Cliente;
             frmNvArte.lbEtiqueta.Text = pedido.Etiqueta;
             frmNvArte.lbOs.Text = pedido.Os;
+            frmNvArte.btCadArte.Enabled = true;
             this.Close();
         }
 

@@ -63,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cbOpcStatus);
             this.panel1.Controls.Add(this.cbOpcPri);
             this.panel1.Controls.Add(this.chkCampoDt);
@@ -322,12 +323,14 @@
             // btCadArte
             // 
             this.btCadArte.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btCadArte.Enabled = false;
             this.btCadArte.Location = new System.Drawing.Point(12, 381);
             this.btCadArte.Name = "btCadArte";
             this.btCadArte.Size = new System.Drawing.Size(99, 54);
             this.btCadArte.TabIndex = 1;
             this.btCadArte.Text = "CADASTRAR ARTE";
             this.btCadArte.UseVisualStyleBackColor = false;
+            this.btCadArte.Click += new System.EventHandler(this.btCadArte_Click);
             // 
             // btCancel
             // 
@@ -348,12 +351,13 @@
             this.btLimpar.TabIndex = 1;
             this.btLimpar.Text = "LIMPAR";
             this.btLimpar.UseVisualStyleBackColor = false;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
             // 
             // FrmNovaArte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(701, 447);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.btCancel);
@@ -392,7 +396,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btCadArte;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btLimpar;
         public  System.Windows.Forms.Label lbOs;
@@ -400,5 +403,6 @@
         public  System.Windows.Forms.Label lbCliente;
         public  System.Windows.Forms.Label lbIdPedido;
         public System.Windows.Forms.Button btSelect;
+        public System.Windows.Forms.Button btCadArte;
     }
 }

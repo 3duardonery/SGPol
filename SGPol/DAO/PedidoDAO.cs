@@ -71,6 +71,7 @@ namespace SGPol.DAO
         }
         #endregion
 
+        #region UPDATE PEDIDO
         public void AtualizarPedido(Pedido pedido)
         {
             string Sql = "UPDATE tb_pedido SET nome_cliente = @nome, mod_etiqueta = @etiqueta, os = @os, obs = @obs WHERE id_pedido = @id";
@@ -91,8 +92,9 @@ namespace SGPol.DAO
                 
             }
         }
-        
+        #endregion
 
+        #region BUSCA PEDIDO
         public List<Pedido> BuscaNomeCliente(string cliente)
         {
             string Sql = "SELECT * FROM tb_pedido WHERE nome_cliente = @cliente";
@@ -188,9 +190,9 @@ namespace SGPol.DAO
             }
             return listaPedido;
         }
+        #endregion
 
-        
-
+        #region EXCLUIR PEDIDO
         public int ExcluirPedido(int id_pedido)
         {
             int resultado = 0;
@@ -209,5 +211,7 @@ namespace SGPol.DAO
             }
             return resultado;
         }
+        #endregion
+
     }
 }

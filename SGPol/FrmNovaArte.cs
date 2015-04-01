@@ -46,5 +46,15 @@ namespace SGPol
             else
                 txtDtElab.Enabled = false;
         }
+
+        private void btLimpar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btCadArte_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

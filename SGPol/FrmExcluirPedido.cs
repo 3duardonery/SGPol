@@ -17,19 +17,18 @@ namespace SGPol
         private Pedido pedido = new Pedido();
         private List<Pedido> listPedido;
         private static FrmExcluirPedido frmListFull;
+
         public FrmExcluirPedido()
         {
             InitializeComponent();
             carregaGrid();
         }
-
         public static FrmExcluirPedido getInstance()
         {
             if (frmListFull == null)
                 frmListFull = new FrmExcluirPedido();
             return frmListFull;
         }
-
         private void carregaInfPedido(object sender, EventArgs e)
         {
             try
@@ -46,7 +45,6 @@ namespace SGPol
             }
             
         }
-
         public void carregaGrid()
         {
             gridListPedidos.Rows.Clear();
@@ -58,7 +56,6 @@ namespace SGPol
                 gridListPedidos.Rows.Add(pedido2.Id,pedido2.Cliente,pedido2.Etiqueta,pedido2.Os,pedido2.Obs);
             }
         }
-
         private void btExcluir_Click(object sender, EventArgs e)
         {
             pedidoDAO = new PedidoDAO();
@@ -73,7 +70,6 @@ namespace SGPol
                 {
                     MessageBox.Show("O sistema não conseguiu excluir o registro!", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
             }
             catch (Exception exc)
             {
