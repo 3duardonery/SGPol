@@ -39,6 +39,7 @@
             this.editarDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,8 +62,6 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testarConexãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,28 +115,28 @@
             // 
             this.duplicarToolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("duplicarToolStripMenuItem3.Image")));
             this.duplicarToolStripMenuItem3.Name = "duplicarToolStripMenuItem3";
-            this.duplicarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.duplicarToolStripMenuItem3.Size = new System.Drawing.Size(135, 22);
             this.duplicarToolStripMenuItem3.Text = "Duplicar";
             // 
             // refazerToolStripMenuItem2
             // 
             this.refazerToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("refazerToolStripMenuItem2.Image")));
             this.refazerToolStripMenuItem2.Name = "refazerToolStripMenuItem2";
-            this.refazerToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.refazerToolStripMenuItem2.Size = new System.Drawing.Size(135, 22);
             this.refazerToolStripMenuItem2.Text = "Refazer";
             // 
             // finalizarToolStripMenuItem
             // 
             this.finalizarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("finalizarToolStripMenuItem.Image")));
             this.finalizarToolStripMenuItem.Name = "finalizarToolStripMenuItem";
-            this.finalizarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.finalizarToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.finalizarToolStripMenuItem.Text = "Finalizar";
             // 
             // editarDadosToolStripMenuItem
             // 
             this.editarDadosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarDadosToolStripMenuItem.Image")));
             this.editarDadosToolStripMenuItem.Name = "editarDadosToolStripMenuItem";
-            this.editarDadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarDadosToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.editarDadosToolStripMenuItem.Text = "Editar Dados";
             this.editarDadosToolStripMenuItem.Click += new System.EventHandler(this.editarDadosToolStripMenuItem_Click);
             // 
@@ -152,12 +151,18 @@
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listarTodosToolStripMenuItem,
             this.buscarToolStripMenuItem});
             this.consultarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("consultarToolStripMenuItem.Image")));
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // buscarToolStripMenuItem
+            // 
+            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buscarToolStripMenuItem.Text = "Buscar";
+            this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
             // arteToolStripMenuItem
             // 
@@ -340,20 +345,6 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // listarTodosToolStripMenuItem
-            // 
-            this.listarTodosToolStripMenuItem.Name = "listarTodosToolStripMenuItem";
-            this.listarTodosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.listarTodosToolStripMenuItem.Text = "Listar Todos";
-            this.listarTodosToolStripMenuItem.Click += new System.EventHandler(this.listarTodosToolStripMenuItem_Click);
-            // 
-            // buscarToolStripMenuItem
-            // 
-            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.buscarToolStripMenuItem.Text = "Buscar";
-            this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,7 +400,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem testarConexãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarTodosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
 
     }

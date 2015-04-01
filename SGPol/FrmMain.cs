@@ -17,8 +17,8 @@ namespace SGPol
         #region FORMS
         private FrmNovoPedido frmNovo;
         private FrmNovaArte frmNovaArte;
-        private FrmListaPedidosFull frmListFull;
         private FrmExcluirPedido frmExcluirPedido;
+        private FrmExcluirArte frmExcluirArte;
         private FrmEditarPedido frmEditPedido;
         private static FrmMain frmMain;
         #endregion
@@ -84,11 +84,11 @@ namespace SGPol
             frmNovaArte = FrmNovaArte.getInstance();
             frmNovaArte.ShowDialog();
         }
-        private void listarTodosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmListFull = new FrmListaPedidosFull();
-            frmListFull.ShowDialog();
-        }
+        //private void listarTodosToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    frmListFull = new FrmListaPedidosFull();
+        //    frmListFull.ShowDialog();
+        //}
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {

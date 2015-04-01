@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using SGPol.Classes;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace SGPol.DAO
 {
@@ -190,16 +191,23 @@ namespace SGPol.DAO
 
         
 
-        public void ExcluirPedido(int id)
+        public int ExcluirPedido(int id_pedido)
         {
+            int resultado = 0;
+            string Sql = "DELETE FROM tb_pedido WHERE id_pedido=@id";
             try
             {
-
+                sCom = new SqlCommand(Sql, sConn);
+                sCom.CommandType = CommandType.Text;
+                sCom.Parameters.AddWithValue("@id",id_pedido);
+                sConn.Open();
+                resultado = sCom.ExecuteNonQuery();                   
             }
             catch (SqlException sqlExc)
             {
                 
             }
+            return resultado;
         }
     }
 }

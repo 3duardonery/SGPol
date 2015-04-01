@@ -67,11 +67,11 @@
     <Compile Include="FrmEditarPedido.Designer.cs">
       <DependentUpon>FrmEditarPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmExcluirPedido.cs">
+    <Compile Include="FrmExcluirArte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmExcluirPedido.Designer.cs">
-      <DependentUpon>FrmExcluirPedido.cs</DependentUpon>
+    <Compile Include="FrmExcluirArte.Designer.cs">
+      <DependentUpon>FrmExcluirArte.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListaPedidos.cs">
       <SubType>Form</SubType>
@@ -79,11 +79,11 @@
     <Compile Include="FrmListaPedidos.Designer.cs">
       <DependentUpon>FrmListaPedidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmListaPedidosFull.cs">
+    <Compile Include="FrmExcluirPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmListaPedidosFull.Designer.cs">
-      <DependentUpon>FrmListaPedidosFull.cs</DependentUpon>
+    <Compile Include="FrmExcluirPedido.Designer.cs">
+      <DependentUpon>FrmExcluirPedido.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -118,14 +118,14 @@
     <EmbeddedResource Include="FrmEditarPedido.resx">
       <DependentUpon>FrmEditarPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmExcluirPedido.resx">
-      <DependentUpon>FrmExcluirPedido.cs</DependentUpon>
+    <EmbeddedResource Include="FrmExcluirArte.resx">
+      <DependentUpon>FrmExcluirArte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListaPedidos.resx">
       <DependentUpon>FrmListaPedidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmListaPedidosFull.resx">
-      <DependentUpon>FrmListaPedidosFull.cs</DependentUpon>
+    <EmbeddedResource Include="FrmExcluirPedido.resx">
+      <DependentUpon>FrmExcluirPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
