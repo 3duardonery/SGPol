@@ -51,6 +51,7 @@
     <Compile Include="Classes\Finalizado.cs" />
     <Compile Include="Classes\Pedido.cs" />
     <Compile Include="Classes\Polimero.cs" />
+    <Compile Include="Classes\ViewArte.cs" />
     <Compile Include="DAO\ArteDAO.cs" />
     <Compile Include="DAO\FinalizadoDAO.cs" />
     <Compile Include="DAO\PedidoDAO.cs" />
@@ -84,6 +85,12 @@
     </Compile>
     <Compile Include="FrmExcluirPedido.Designer.cs">
       <DependentUpon>FrmExcluirPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListArte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListArte.Designer.cs">
+      <DependentUpon>FrmListArte.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -127,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmExcluirPedido.resx">
       <DependentUpon>FrmExcluirPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListArte.resx">
+      <DependentUpon>FrmListArte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
