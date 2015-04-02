@@ -7,12 +7,10 @@ namespace SGPol.Util
 {
     class FormatData
     {
-        private string data;
-
-        public static string FormatData(string data)
+        public static string FormataData(string data)
         {
-
-            return data;
+            string dt = data.Replace("/","-");
+            return dt;
         }
     }
 }
