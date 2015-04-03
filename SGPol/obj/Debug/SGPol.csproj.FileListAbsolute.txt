@@ -23,7 +23,6 @@ C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\ob
 C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.Properties.Resources.resources
 C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.csproj.GenerateResource.Cache
 C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmExcluirPedido.resources
-C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmListaPedidosFull.resources
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.exe
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.pdb
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\bin\Debug\SGPol.exe
@@ -43,3 +42,6 @@ C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\bin\Debug\SGPol.exe.
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmEditarPedido.resources
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmBuscaPedido.resources
 C:\Users\eduardo.MARKIMPRESSOS\Documents\GitHub\SGPol\SGPol\obj\Debug\SGPol.FrmExcluirArte.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmBuscaPedido.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmExcluirArte.resources
+C:\Users\Eduardo Nery\Documents\Visual Studio 2012\Projects\SGPol\SGPol\SGPol\obj\Debug\SGPol.FrmListArte.resources

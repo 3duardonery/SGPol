@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListArte));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.dtListArte = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prazo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,17 +53,11 @@
             this.panel1.Size = new System.Drawing.Size(880, 302);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(13, 13);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 66);
-            this.panel2.TabIndex = 1;
-            // 
             // dtListArte
             // 
             this.dtListArte.AllowUserToAddRows = false;
+            this.dtListArte.AllowUserToDeleteRows = false;
+            this.dtListArte.AllowUserToOrderColumns = true;
             this.dtListArte.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtListArte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtListArte.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -76,61 +71,81 @@
             this.id_pedido});
             this.dtListArte.Location = new System.Drawing.Point(13, 10);
             this.dtListArte.Name = "dtListArte";
+            this.dtListArte.ReadOnly = true;
             this.dtListArte.Size = new System.Drawing.Size(851, 287);
             this.dtListArte.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(13, 13);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(880, 66);
+            this.panel2.TabIndex = 1;
             // 
             // id
             // 
             this.id.HeaderText = "ID ARTE";
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             this.id.Width = 40;
             // 
             // nome_cliente
             // 
             this.nome_cliente.HeaderText = "CLIENTE";
             this.nome_cliente.Name = "nome_cliente";
+            this.nome_cliente.ReadOnly = true;
             this.nome_cliente.Width = 300;
             // 
             // prazo
             // 
             this.prazo.HeaderText = "PRAZO ARTE";
             this.prazo.Name = "prazo";
+            this.prazo.ReadOnly = true;
             // 
             // data_elab
             // 
             this.data_elab.HeaderText = "DATA ELABORAÇÃO";
             this.data_elab.Name = "data_elab";
+            this.data_elab.ReadOnly = true;
             // 
             // prioridade
             // 
             this.prioridade.HeaderText = "PRIORIDADE";
             this.prioridade.Name = "prioridade";
+            this.prioridade.ReadOnly = true;
             this.prioridade.Width = 80;
             // 
             // status
             // 
             this.status.HeaderText = "STATUS";
             this.status.Name = "status";
+            this.status.ReadOnly = true;
             // 
             // obs
             // 
             this.obs.HeaderText = "OBS";
             this.obs.Name = "obs";
+            this.obs.ReadOnly = true;
             this.obs.Width = 300;
             // 
             // id_pedido
             // 
             this.id_pedido.HeaderText = "ID PEDIDO";
             this.id_pedido.Name = "id_pedido";
-            this.id_pedido.Width = 40;
+            this.id_pedido.ReadOnly = true;
+            this.id_pedido.Width = 60;
             // 
             // FrmListArte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(905, 464);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmListArte";
             this.Text = "Lista de Artes";
             this.panel1.ResumeLayout(false);

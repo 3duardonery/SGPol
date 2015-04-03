@@ -95,7 +95,7 @@
             // 
             this.novoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem.Image")));
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
@@ -108,7 +108,7 @@
             this.editarDadosToolStripMenuItem});
             this.editarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editarToolStripMenuItem.Image")));
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // duplicarToolStripMenuItem3
@@ -144,7 +144,7 @@
             // 
             this.excluirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("excluirToolStripMenuItem.Image")));
             this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.excluirToolStripMenuItem.Text = "Excluir";
             this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
             // 
@@ -154,13 +154,13 @@
             this.buscarToolStripMenuItem});
             this.consultarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("consultarToolStripMenuItem.Image")));
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.buscarToolStripMenuItem.Text = "Buscar";
             this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
@@ -180,7 +180,7 @@
             // 
             this.novoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem1.Image")));
             this.novoToolStripMenuItem1.Name = "novoToolStripMenuItem1";
-            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.novoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.novoToolStripMenuItem1.Text = "Novo";
             this.novoToolStripMenuItem1.Click += new System.EventHandler(this.novoToolStripMenuItem1_Click);
             // 
@@ -193,7 +193,7 @@
             this.editarDadosToolStripMenuItem1});
             this.editarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("editarToolStripMenuItem1.Image")));
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
             // 
             // duplicarToolStripMenuItem
@@ -228,15 +228,16 @@
             // 
             this.excluirToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("excluirToolStripMenuItem1.Image")));
             this.excluirToolStripMenuItem1.Name = "excluirToolStripMenuItem1";
-            this.excluirToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.excluirToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.excluirToolStripMenuItem1.Text = "Excluir";
             // 
             // consultarToolStripMenuItem1
             // 
             this.consultarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("consultarToolStripMenuItem1.Image")));
             this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.consultarToolStripMenuItem1.Text = "Consultar";
+            this.consultarToolStripMenuItem1.Click += new System.EventHandler(this.consultarToolStripMenuItem1_Click);
             // 
             // clichêToolStripMenuItem
             // 

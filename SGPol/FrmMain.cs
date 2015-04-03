@@ -20,6 +20,7 @@ namespace SGPol
         private FrmExcluirPedido frmExcluirPedido;
         private FrmExcluirArte frmExcluirArte;
         private FrmEditarPedido frmEditPedido;
+        private FrmListArte frmListaArte;
         private static FrmMain frmMain;
         #endregion
 
@@ -140,6 +141,12 @@ namespace SGPol
             }
         }
         #endregion
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmListaArte = new FrmListArte();
+            frmListaArte.ShowDialog();
+        }
 
         
 
