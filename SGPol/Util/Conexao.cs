@@ -28,7 +28,7 @@ namespace SGPol.Util
             "Password={4};", server, instance, db, user, pass);
          #endregion
 
-         private static string caminhoBancoConfig = ConfigurationManager.ConnectionStrings["ConexaoCasa"].ToString();
+         private static string caminhoBancoConfig = ConfigurationManager.ConnectionStrings["Conexao"].ToString();
          
 
          /*
